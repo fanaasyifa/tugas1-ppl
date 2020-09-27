@@ -10,3 +10,21 @@ const{
     hitungDiskon,
     total
 } = require('../helpers.js')
+
+test('Qty 1 apabila ditambah 1 hasilnya menjadi 2', () => {
+    expect(incrementQty(1)).toBe(2);
+});
+
+test('Qty 1 apabila ditambah "1" hasilnya menjadi 2', () => {
+    expect(incrementQty("1")).toBe(2);
+});
+
+test('Qty 2 apabila dikurangi 1 maka hasilnya 1', () => {
+    expect(decrementQty(2)).toBe(1);
+});
+
+test('Jika Qty -3, maka hasilnya 1', () => {
+    expect(absoluteQty(-3)).toBe(1);
+});
+
+
