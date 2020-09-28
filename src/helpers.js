@@ -18,9 +18,11 @@ function hitungDiskon(price, qty, kode) {
             hasilDiskon = subTotal * 0.10;
             break;
             
-        case "diskonPDKT":
-            hasilDiskon = subTotal * 0.25;
-            break;
-    return hasilDiskon;
+            case "diskonPDKT":
+                hasilDiskon = subTotal * 0.25;
+                break;
+            case "diskonJADIAN":
+                hasilDiskon = subTotal * 0.50;
+                break;
 }
 }

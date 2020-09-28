@@ -25,5 +25,9 @@ decrButton.addEventListener('click', () => {
   subtotal.textContent = `Rp. ${total(qtyInput.value,price.value,codeInput.value)}`;
 });
 
+okButton.addEventListener('click', () => {
+  subtotal.textContent = `Rp. ${total(qtyInput.value,price.value,codeInput.value)}`;
+});
+
 
 
