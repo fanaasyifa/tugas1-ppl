@@ -29,5 +29,12 @@ okButton.addEventListener('click', () => {
   subtotal.textContent = `Rp. ${total(qtyInput.value,price.value,codeInput.value)}`;
 });
 
+price.addEventListener('keyup', () => {
+  subtotal.textContent = `Rp. ${total(price.value, qtyInput.value, codeInput.value)}`
+});
+
+qtyInput.addEventListener('keyup', () => {
+  subtotal.textContent = `Rp. ${total(price.value, qtyInput.value, codeInput.value)}`
+});
 
 

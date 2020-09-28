@@ -25,4 +25,13 @@ function hitungDiskon(price, qty, kode) {
                 hasilDiskon = subTotal * 0.50;
                 break;
 }
+return hasilDiskon;
+}
+module.exports = { 
+    incrementQty, 
+    decrementQty,
+    recalculateSubtotal,
+    absoluteQty,
+    total,
+    hitungDiskon
 }
